@@ -29,7 +29,7 @@ namespace AuditSeverityModule.Repository
                 List<AuditBenchmark> listFromAuditBenchmark = new List<AuditBenchmark>();
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-                HttpResponseMessage response = client.GetAsync("http://20.62.230.39/api" + "/AuditBenchmark").Result; //client.BaseAddress
+                HttpResponseMessage response = client.GetAsync("http://52.158.216.24/api" + "/AuditBenchmark").Result; //client.BaseAddress
                 if (response.IsSuccessStatusCode)
                 {
                     string data = response.Content.ReadAsStringAsync().Result;
